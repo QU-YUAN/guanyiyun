@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*轮播图*/
+		.zk-lb{
+			width: 100%;
+			min-width: 1000px;
+			height:500px;
+			overflow: hidden;
+		}
+		.zk-lb3{
+			width: 1930px;
+			height:500px;
+			display: none;
+			float: left;
+			margin-top:-20px;
+		}
+		#ul1{
+			width: 9650px;
+			height:500px;
+			position: absolute;
+			left:0;
+			top: 0;
+		}
+		#zk-lbzg{
+			width: 1930px;
+			height:500px;
+			position: relative;
+			/*overflow: hidden;*/
+		}
+		#zk-lbzg div{
+			width: 10px;
+			height:10px;
+			border: 2px solid #eee;
+			border-radius:100%;
+			position: absolute;
+			top: 458px;
+			left:850px;
+			display:inline;
+			margin-left: 20px;
+		}
+		#zk-lbzg .a{
+			left:880px;
+		}
+		#zk-lbzg .b{
+			left:910px;
+		}
+		#zk-lbzg .c{
+			left:940px;
+		}
+		#zk-lbzg .d{
+			left:970px;
+		}
+		.zk-lb ul li{
+			float: left;
+		}
+		.zk-lb3{
+			display:block;
+		}
+
+</style>
+</head>
+<body>
+<!-- 轮播 -->
+		<div class="zk-lb">
+			<div id="zk-lbzg">
+				<ul id="ul1">
+					<li>
+						<a href="#javascript" id="zk-lb2">
+							<img src="../images/zk-lunboda.png" class="zk-lb3">
+						</a>
+						<a href="#javascript">
+							<img src="../images/zk-lunboda2.png" class="zk-lb3">
+						</a>
+						<a href="#javascript">
+							<img src="../images/zk-lunboda3.jpg" class="zk-lb3">
+						</a>
+						<a href="#javascript">
+							<img src="../images/zk-lunbo4.png" class="zk-lb3">
+						</a>
+						<a href="#javascript">
+							<img src="../images/zk-lunboda5.png" class="zk-lb3">
+						</a>
+					</li>
+				</ul>
+				<div id="zk-lb1"></div>
+				<div id="zk-lb1" class="a"></div>
+				<div id="zk-lb1" class="b"></div>
+				<div id="zk-lb1" class="c"></div>
+				<div id="zk-lb1" class="d"></div>
+			</div>
+		</div>
+<script>
+// 轮播图
+	let zg = document.querySelector('#zk-lbzg')
+	let div = document.querySelector('#zk-lb1');
+	let ul = document.querySelector('#ul1');
+	// let sb = zg.getElementsByTagName = div;
+	ul.innerHTML =  ul.innerHTML + ul.innerHTML;
+	ul.style.width = ul.offsetWidth*2 + 'px';
+		var timer = setInterval(move,20);
+		var speed = 10;
+		var is_stant = true;
+		function move(){
+			//3. 动起来
+		ul.style.left = ul.offsetLeft-speed + 'px';
+			if(ul.offsetLeft <= -9650){
+			ul.style.left=0+'px';
+			}
+		if(is_stant){
+			if(Math.abs(-1*parseInt(ul.style.left)%1930)==0){
+				clearInterval(timer);
+				setTimeout(function(){
+					clearInterval(timer);
+					timer = setInterval(move,20);
+				},5000);
+			}
+		}
+	}
+</script>
+</body>
+</html>

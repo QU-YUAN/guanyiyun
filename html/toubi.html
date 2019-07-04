@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"微软雅黑","宋体",Arail,Tabhoma; font-size: 16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none; overflow: auto;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em,b,i{font-weight: normal; font-style: normal;}
+a,u{text-decoration:none;}
+
+/*==========================Reset_End===========================*/
+		#zk-toubu1{
+			width: 1300px;
+			height:66px;
+			margin: 0 auto;
+		}
+		#zk-toubu1 .img2{
+			width:290px;
+			height:66px;
+			margin-left: 80px;
+		}
+		.zk-tou1-1{
+			width: 800px;
+			display:inline;
+			padding-top:20px;
+			padding-left: 120px;
+			min-width: 800px;
+			float: right;
+		}
+		#zk-toubu1 .z1{
+			height:20px;
+			margin-left: 40px;
+			padding-bottom: 20px;
+			color: #000;
+			font-size: 14px;
+			border-bottom: 5px solid #0d73f0;
+		}
+		.zk-tou1-1 .k1{
+			width: 0;
+		}
+
+
+		.zk2{
+			width: 100%;
+			min-width: 1000px;
+			height:135px;
+			min-width: 1000px;
+			margin: 0 auto;
+		}
+		.zk2 span{
+			width: 100%;
+			min-width: 1000px;
+			height:135px;
+			min-width: 1000px;
+			float: left;
+			margin: 0 450px;
+		}
+		.zk2 div{
+			float: left;
+			padding: 15px;
+		}
+		.zk2-1{
+			border-left: solid 1px #ccc;
+		}
+		.zk2-1-1{
+			margin-left: -15px;
+		}
+		.zk2-1-1 h3{
+			padding-bottom: 15px;
+		}
+		.zk2-1-1 p{
+			color: #5e6266;
+			font-size: 18px;
+		}
+		.zk2-1-1 a{
+			color: #000;
+		}
+		.zk3{
+
+		}
+		.zk3-1{
+			width: 100%
+			min-width: 1000px;
+
+			height:200px;
+			background: #ecf6ff;
+			margin: 0 auto;
+			min-width: 1550px;
+			padding-top: 60px;
+			text-align: center;
+			position: relative;
+		}
+		.p1{
+			font-size: 30px;
+		}
+		.p2{
+			width: 324px;
+			height:50px;
+			font-size: 20px;
+			color:#71706c;
+			display:inline-block;
+			margin-top: 30px;
+		}
+		.p2-1{
+			width: 57px;
+			height:50px;
+			font-size: 20px;
+			padding-right: 20px;
+			display:inline-block;
+		}
+		.p2-2{
+			width: 177px;
+			height:50px;
+			font-size: 20px;
+			color:#71706c;
+			display:inline-block;
+			text-align: left;
+		}
+
+
+		#p3{
+			color:#f7de0d;
+		}
+
+		.img3{
+			position: absolute;
+			top:58px;
+			left:918px;
+		}
+		.zk4{
+			width: 100%;
+			min-width: 1000px;
+
+			height:820px;
+			margin-top:-4px;
+			background:#1e88de;
+			position: relative;
+		}
+		.zk3{
+			width: 100%;
+			min-width: 1300;
+			position: relative;
+		}
+		.zk4-1{
+			width: 450px;
+			font-size: 33px;
+			margin: 0 auto;
+			color:#fff;
+			padding-top: 55px;
+			position: relative;
+		}
+		.zk4-1-1{
+			position: absolute;
+			top:54px;
+			left:156px;
+		}
+		.zk4-2{
+			margin-top:90px;
+			margin-left: 170px;
+		}
+		.zk4-2-1{
+			width: 330px;
+			height:55px;
+			color:#d6dde3;
+			border: 1px solid #d6dde3;
+			border-radius: 8px;
+			font-size: 18px;
+			text-align: center;
+			line-height: 50px;
+			margin-bottom: 30px;
+		}
+		.zk4-3{
+			width: 800px;
+			background:#f3fbff;
+			position: absolute;
+			top:150px;
+			left:595px;
+			border: 1px solid #f3fbff;
+			border-radius: 10px;
+			padding: 18px 0 18px 0;
+			display:none;
+		}
+		.zk4-9{
+			width: 800px;
+			background:#f3fbff;
+			position: absolute;
+			top:150px;
+			left:595px;
+			border: 1px solid #f3fbff;
+			border-radius: 10px;
+			padding: 18px 0 18px 0;
+		}
+
+		.zk4-3-1{
+			border-top: 18px solid transparent;
+			border-right: 35px solid #f3fbff;
+			border-bottom: 18px solid transparent;
+			position: absolute;
+			top: 45px;
+			left:-36px;
+			/*display:none;*/
+		}
+		.zk4-3-3{
+			border-top: 18px solid transparent;
+			border-right: 35px solid #f3fbff;
+			border-bottom: 18px solid transparent;
+			position: absolute;
+			top: 130px;
+			left:-36px;
+		}
+		.zk4-3-4{
+			border-top: 18px solid transparent;
+			border-right: 35px solid #f3fbff;
+			border-bottom: 18px solid transparent;
+			position: absolute;
+			top: 220px;
+			left:-36px;
+		}
+		.zk4-3-5{
+			border-top: 18px solid transparent;
+			border-right: 35px solid #f3fbff;
+			border-bottom: 18px solid transparent;
+			position: absolute;
+			top: 305px;
+			left:-36px;
+		}
+		.zk4-3-6{
+			border-top: 18px solid transparent;
+			border-right: 35px solid #f3fbff;
+			border-bottom: 18px solid transparent;
+			position: absolute;
+			top: 390px;
+			left:-36px;
+		}
+
+		.zk5{
+			width: 100%;
+			height:680px;
+		}
+		.zk5-1{
+			width: 700px;
+			height:50px;
+			margin: 0 auto;
+			line-height: 50px;
+			font-size:33px;
+			position: relative;
+			padding-top:55px;
+		}
+		.zk5-1-1{
+			position: absolute;
+			top: 56px;
+			left:388px;
+		}
+		.zk5-2{
+			width:1300px;
+			height:70px;
+			font-size:23px;
+			color: #46484a;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 70px;
+			border-bottom: 2px solid #c8c8c8;
+			padding-top: 50px;
+		}
+		.zk5-2-1 span{
+			padding-bottom: 20px;
+			margin: 0 90px 0px 90px;
+			border-bottom: 2px solid #1e50f4;
+		}
+		.zk5-3{
+			width: 1300px;
+			margin: 0 auto;
+		}
+		.zk5-3-1 img{
+			width: 170px;
+			height:130px;
+			padding: 30px 40px 0px 40px;
+			margin: 0 auto;
+		}
+		.zk5-4{
+			width: 300px;
+			height:15px;
+			margin: 0 auto;
+			line-height: 15px;
+			font-size: 20px;
+			font-weight: bold;
+			padding-top:40px;
+		}
+		.zk5-4 a{
+			color: #1f88de;
+		}
+		.zk6{
+			width: 100%;
+			position: relative;
+		}
+
+		.zk6-2 span{
+			font-size: 100px;
+			opacity: 0.6;
+			color: #fff;
+		}
+		.zk6-2-1{
+			position: absolute;
+			top:160px;
+			left:100px;
+		}
+		.zk6-2-2{
+			position: absolute;
+			top: 160px;
+			right: 100px;
+		}
+		.zk7{
+			width: 1400px;
+			height:200px;
+			margin: 0 auto;
+		}
+		.zk7-1{
+			width: 1300px;
+			height:200px;
+			margin: 0 auto;
+			position: relative;
+			padding-top:60px;
+		}
+		.zk7-1 img{
+			padding-left: 130px;
+		}
+		.zk7-2 h3{
+			font-size: 18px;
+			color: #4a4d50;
+		}
+		.p4{
+			position: absolute;
+			top:107px;
+			left:176px;
+		}
+		.p5{
+			position: absolute;
+			top:107px;
+			left:598px;
+		}
+		.p6{
+			position: absolute;
+			top:107px;
+			right: 125px;
+		}
+		.yc1{
+			width: 104%;
+			height: 400px;
+			margin-left: -120px;
+			background-color: rgb(70,72,74,0.9);
+			display:none;
+			position: absolute;
+			top:65px;
+			left:50px;
+			z-index: 10;
+
+		}
+		.yc2{
+			width: 104%;
+			height: 400px;
+			margin-left: -120px;
+			background-color: rgb(70,72,74,0.9);
+			display:none;
+			position: absolute;
+			top:65px;
+			left:50px;
+			z-index: 10;
+
+		}
+		.yc3{
+			width: 104%;
+			height: 250px;
+			margin-left: -120px;
+			background-color: rgb(70,72,74,0.9);
+			display:none;
+			position: absolute;
+			top:65px;
+			left:50px;
+			z-index: 10;
+
+		}
+		.yc4{
+			width: 104%;
+			height: 150px;
+			margin-left: -120px;
+			background-color: rgb(70,72,74,0.9);
+			display:none;
+			position: absolute;
+			top:65px;
+			left:50px;
+			z-index: 10;
+
+		}
+
+		.yc1-1 img,.yc1-2 img,.yc1-3 img{
+			width: 60px;
+			height:60px;
+		}
+
+		.yc1-1-1 li{
+			width: 300px;
+			height:70px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 200px;
+			position: relative;
+		}
+		.yc2-1-1 li{
+			width: 300px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 200px;
+			position: relative;
+		}
+		.yc3-1-1 li{
+			width: 250px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 200px;
+			position: relative;
+			top:45px;
+			left:50px;
+		}
+		.yc4-1-1 li{
+			width: 250px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 200px;
+			position: relative;
+			top:45px;
+			left:-10px;
+		}
+
+		.yc1-1-1 a,.yc1-2-1 a,.yc1-3-1 a{
+			color: #dce2e6;
+			position: absolute;
+			top: 10px;
+			left:80px;
+		}
+		.yc2-2-1 a,.yc2-3-1 a{
+			color: #dce2e6;
+			position: absolute;
+			top: 10px;
+			left:20px;
+			font-weight: bold;
+		}
+		.yc2-1-1 a{
+			color: #dce2e6;
+			position: absolute;
+			top: 10px;
+			left:70px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.yc3-1-1 a,.yc3-2-1 a,.yc3-3-1 a{
+			color: #dce2e6;
+			position: absolute;
+			top: 13px;
+			left:105px;
+			font-weight: bold;
+		}
+		.yc4-1-1 a,.yc4-2-1 a,.yc4-3-1 a,.yc4-4-1 a{
+			color: #dce2e6;
+			position: absolute;
+			top: 13px;
+			left:90px;
+			font-weight: bold;
+		}
+
+		.yc1-1-1 p,.yc1-2-1 p,.yc1-3-1 p{
+			position: absolute;
+			top: 35px;
+			left:80px;
+			color: #868a8e;
+		}
+
+		.yc1-1-1 img,.yc1-2-1 img,.yc1-3-1 img{
+			position: absolute;
+			top: 5px;
+			left:10px;
+		}
+
+		.yc1-1-1 .h3-1,.yc1-2-1 .h3-1,.yc1-3-1 .h3-1{
+			padding-top: 35px;
+		}
+		.yc2-1-1 .h3-2,.yc2-2-1 .h3-2,.yc2-3-1 .h3-2{
+			color: #fff;
+			padding-top: 35px;
+		}
+
+		.yc1-1-1 .li1,.yc1-2-1 .li1,.yc1-3-1 .li1{
+			border: none;
+		}
+		.yc2-1-1 .li2,.yc2-2-1 .li2,.yc2-3-1 .li2{
+			border: none;
+		}
+		.yc3-1-1 .li3,.yc3-2-1 .li3,.yc3-3-1 .li3{
+			border: none;
+		}
+
+		.yc1-2-1 li{
+			width: 420px;
+			height:70px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 550px;
+			position: relative;
+			top:-366px;
+			left:50px;
+		}
+		.yc2-2-1 li{
+			width: 320px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 550px;
+			position: relative;
+			top:-286px;
+			left:80px;
+		}
+		.yc3-2-1 li{
+			width: 250px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 550px;
+			position: relative;
+			top:-100px;
+			left:120px;
+		}
+		.yc4-2-1 li{
+			width: 250px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 550px;
+			position: relative;
+			top:-27px;
+			left:-25px;
+		}
+
+
+		.yc1-3-1 li{
+			width: 375px;
+			height:70px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 550px;
+			position: relative;
+			top:-366px;
+			left:570px;
+		}
+		.yc2-3-1 li{
+			width: 300px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 500px;
+			position: relative;
+			top:-215px;
+			left:490px;
+		}
+		.yc3-3-1 li{
+			width: 250px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 500px;
+			position: relative;
+			top:-100px;
+			left:600px;
+		}
+		.yc4-3-1 li{
+			width: 250px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 500px;
+			position: relative;
+			top:-27px;
+			left:365px;
+		}
+		.yc4-4-1 li{
+			width: 250px;
+			height:50px;
+			border: 1px solid #cdd6dd;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			margin-left: 500px;
+			position: relative;
+			top:-27px;
+			left:700px;
+		}
+
+		.k1:hover .yc1{
+			display:block;
+		}
+		.k1:hover .yc2{
+			display:block;
+		}
+		.k1:hover .yc3{
+			display:block;
+		}
+		.k1:hover .yc4{
+			display:block;
+		}
+
+		.yc1-2-1,.yc1-3-1{
+			width: 0;
+			height:0;
+		}
+		.yc2-2-1,.yc2-3-1{
+			width: 0;
+			height:0;
+		}
+		.yc3-2-1,.yc3-3-1{
+			width: 0;
+			height:0;
+		}
+		.yc4-2-1,.yc4-3-1{
+			width: 0;
+			height:0;
+		}
+		.yc3-1-2{
+			width: 47px;
+			height:45px;
+			float: left;
+			padding-left: 100px;
+			background:url(../images/zk-index-xz-icon7.png) center no-repeat;
+		}
+		.yc3-1-3{
+			width: 47px;
+			height:34px;
+			float: left;
+			padding-left: 100px;
+			padding-top: 15px;
+			background:url(../images/zk-index-xz-icon10.png)center no-repeat;
+		}
+		.yc3-1-4{
+			width: 47px;
+			height:34px;
+			float: left;
+			padding-left: 100px;
+			padding-top: 15px;
+			background:url(../images/zk-index-xz-icon8.png)center no-repeat;
+		}
+		.yc3-1-5{
+			width: 47px;
+			height:34px;
+			float: left;
+			padding-left: 100px;
+			padding-top: 15px;
+			background:url(../images/zk-index-xz-icon11.png)center no-repeat;
+		}
+		.yc3-1-6{
+			width: 47px;
+			height:34px;
+			float: left;
+			position: absolute;
+			left:50px;
+			top: 10px;
+			background:url(../images/zk-index-xz-icon9.png)center no-repeat;
+		}
+		.yc3-1-7{
+			width: 47px;
+			height:34px;
+			float: left;
+			position: absolute;
+			left:50px;
+			top: 10px;
+			background:url(../images/zk-index-xz-icon12.png)center no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部1 -->
+		<div id="zk-toubu1">
+				<img src="../images/zk-logxiao.jpg" alt="" class="img2">
+				<div class="zk-tou1-1">
+					<a href="#javascript" class="z1">首页</a>
+
+					<span class="k1">
+						<a href="#javascript" class="z1" id="k1">产品中心</a>
+						<!-- 下面为隐藏内容 -->
+						<div class="yc1">
+							<span class="yc1-1">
+								<ul class="yc1-1-1">
+									<li class="li1"><h3 class="h3-1">自建商城</h3></li>
+									<li>
+										<img src="../images/zk-b2c.png" alt="">
+										<a href="#javascript">B2C自建商城系统</a>
+										<p>建立自己的网上商城系统</p>
+									</li>
+									<li>
+										<img src="../images/zk-b2b.png" alt="">
+										<a href="#javascript">B2B自建商城系统</a>
+										<p>发展分销，管理分销商</p>
+									</li>
+									<li>
+										<img src="../images/zk-bbc.png" alt="">
+										<a href="#javascript">BBC平台商城</a>
+										<p>发展分销，管理分销商</p>
+									</li>
+								</ul>
+							</span>
+							<span class="yc1-2">
+								<ul class="yc1-2-1">
+									<li class="li1"><h3 class="h3-1">订单管理</h3></li>
+									<li>
+										<img src="../images/zk-zrp.png" alt="">
+										<a href="#javascript">C-ERP高效电商云管理服务管理系统</a>
+										<p>高效信息化电商管理解决方案</p>
+									</li>
+									<li>
+										<img src="../images/zk-yun.png" alt="">
+										<a href="#javascript">E店管家轻量级电商云服务管理系统</a>
+										<p>面向小微电商企业的云SaaS一体化管理软件</p>
+									</li>
+									<li>
+										<img src="../images/zk-omp.png" alt="">
+										<a href="#javascript">EC-OMS全渠道企业管理中台</a>
+										<p>精细化的订单管理系统</p>
+									</li>
+								</ul>
+							</span>
+							<span class="yc1-3">
+								<ul class="yc1-3-1">
+									<li class="li1"><h3 class="h3-1">仓储管理</h3></li>
+									<li>
+										<img src="../images/zk-wms.png" alt="">
+										<a href="#javascript">EC-WMS智能立体化仓储管理系统</a>
+										<p>精细化的电商仓储管理系统</p>
+									</li>
+								</ul>
+							</span>
+						</div>
+					</span>
+
+					<span class="k1">
+						<a href="#javascript" class="z1">解决方案</a>
+						<div class="yc2">
+							<span class="yc2-1">
+								<ul class="yc2-1-1">
+									<li class="li2"><h3 class="h3-2">自建商城</h3></li>
+									<li>
+										<a href="#javascript">B2C自建商城系统</a>
+									</li>
+									<li>
+										<a href="#javascript">B2B自建商城系统</a>
+									</li>
+									<li>
+										<a href="#javascript">BBC平台商城</a>
+									</li>
+								</ul>
+							</span>
+							<span class="yc2-2">
+								<ul class="yc2-2-1">
+									<li class="li2"><h3 class="h3-2">业务解决方案</h3></li>
+									<li>
+										<a href="#javascript">管易云PDA无纸化移动仓库存储解决方案</a>
+									</li>
+									<li>
+										<a href="#javascript">小微企业新零售解决方案</a>
+									</li>
+									<li>
+										<a href="#javascript">中小企业线上线下一体化解决方案</a>
+									</li>
+									<li>
+										<a href="#javascript">中小企业全渠道营销解决方案</a>
+									</li>
+								</ul>
+							</span>
+							<span class="yc2-3">
+								<ul class="yc2-3-1">
+									<li>
+										<a href="#javascript">云之家移动办公解决方案</a>
+									</li>
+									<li>
+										<a href="#javascript">集团企业全渠道新零售解决方案</a>
+									</li>
+									<li>
+										<a href="#javascript">仓储物流解决方案</a>
+									</li>
+								</ul>
+							</span>
+						</div>
+					</span>
+
+					<a href="#javascript" class="z1">案例</a>
+					<a href="#javascript" class="z1">特色服务</a>
+					<a href="#javascript" class="z1">渠道合作</a>
+
+					<span class="k1">
+						<a href="#javascript" class="z1">关于我们</a>
+						<div class="yc3">
+							<span class="yc3-1">
+								<ul class="yc3-1-1">
+									<li>
+										<a href="#javascript">公司简介</a>
+										<span class="yc3-1-2"></span>
+									</li>
+									<li>
+										<a href="#javascript">加入管易</a>
+										<span class="yc3-1-3"></span>
+									</li>
+								</ul>
+							</span>
+							<span class="yc3-2">
+								<ul class="yc3-2-1">
+									<li>
+										<a href="#javascript">成长历程</a>
+										<span class="yc3-1-4"></span>
+									</li>
+									<li>
+										<a href="#javascript">管易云课堂</a>
+										<span class="yc3-1-5"></span>
+									</li>
+								</ul>
+							</span>
+							<span class="yc3-3">
+								<ul class="yc3-3-1">
+									<li>
+										<a href="#javascript">企业荣誉</a>
+										<span class="yc3-1-6"></span>
+									</li>
+									<li>
+										<a href="#javascript">客服感谢信</a>
+										<span class="yc3-1-7">
+									</li>
+								</ul>
+							</span>
+						</div>
+					</span>
+
+					<span class="k1">
+						<a href="#javascript" class="z1">电商咨讯</a>
+						<div class="yc4">
+							<span class="yc4-1">
+								<ul class="yc4-1-1">
+									<li>
+										<a href="#javascript">管易咨讯</a>
+									</li>
+								</ul>
+							</span>
+							<span class="yc4-2">
+								<ul class="yc4-2-1">
+									<li>
+										<a href="#javascript">电商动态</a>
+									</li>
+								</ul>
+							</span>
+							<span class="yc4-3">
+								<ul class="yc4-3-1">
+									<li>
+										<a href="#javascript">电商干货</a>
+									</li>
+								</ul>
+							</span>
+							<span class="yc4-4">
+								<ul class="yc4-4-1">
+									<li>
+										<a href="#javascript">网易云课堂</a>
+									</li>
+								</ul>
+						</div>
+					</span>
+				</div>
+			</div>
+</body>
+</html>
